@@ -9,10 +9,17 @@ router.get('/', function (req, res, next) {
 
 router.post('/login', (req, res) => {
   if (username == req.body.username && password == req.body.password) {
+    req.session.loggedIn = true;
+    req.session.name = username;
+    req.session.password = password;
     res.redirect('/index')
   } else {
     res.redirect('/login')
   }
+})
+router.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/')
 })
 
 module.exports = router;

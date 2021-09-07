@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  
+
   let products = [
     {
       name: "Iphone",
@@ -31,7 +31,8 @@ router.get('/', function (req, res, next) {
       image: "https://cdn.vox-cdn.com/thumbor/v97OD-MBgNjw8p5crApucVs9RB8=/0x0:2050x1367/1800x1800/filters:focal(1025x684:1026x685)/cdn.vox-cdn.com/uploads/chorus_asset/file/22022572/bfarsace_201106_4269_012.0.jpg"
     }
   ]
-  res.render('index', { products });
+  let name = req.session.name;
+  res.render('index', { products, name });
 });
 
 module.exports = router;
