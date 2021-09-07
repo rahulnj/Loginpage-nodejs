@@ -14,7 +14,8 @@ router.post('/login', (req, res) => {
     req.session.password = password;
     res.redirect('/index')
   } else {
-    res.redirect('/login')
+
+    res.render('login')
   }
 })
 router.get('/logout', (req, res) => {
