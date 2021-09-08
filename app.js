@@ -25,11 +25,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//reload again
+app.use(function (req, res, next) {
+  res.set('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
+  next();
+});
+
+
+
 app.use(session({
   secret: 'key',
   resave: false,
   saveUninitialized: true,
-  cookie: { maxAge: 600000 }
+  cookie: { maxAge: 6000000 }
 }))
 
 app.use('/', loginRouter);

@@ -1,76 +1,72 @@
 <html lang='en'>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-    <!-- Bootstrap CSS -->
-     
-    <link
-      href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'
-      rel='stylesheet'
-      integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We'
-      crossorigin='anonymous'
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-    <title>Hello, world!</title>
-  </head>
- <body style="background-color: EDEDED;">
+  <!-- Bootstrap CSS -->
+
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous' />
+
+  <title>Hello, world!</title>
+</head>
+
+<body style="background-color: EDEDED;">
   <section class="vh-100">
-   
-  <div class="container-fluid h-custom">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <h2 class="d-flex justify-content-center fw-3">MobKart</h2>
-      <div class="col-md-9 col-lg-6 col-xl-5">
-        <img src="https://birchtree.me/content/images/2021/06/007-copy.jpg" class="img-fluid"
-          alt="Sample image">
-      </div>
-      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <form action="/login" method="POST">
-        
 
-          <!-- Email input -->
-          <div class="form-outline mb-4 shadow-sm">
-            <label class="form-label fs-6" >USERNAME</label>
-            <input type="text" id="form3Example3" name="username" class="form-control form-control-lg"
-              placeholder="Enter your user name" />
-            
-          </div>
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <h2 class="d-flex justify-content-center fw-3">MobKart</h2>
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://birchtree.me/content/images/2021/06/007-copy.jpg" class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form action="/login" method="POST">
 
-          <!-- Password input -->
-          <div class="form-outline mb-4 shadow-sm">
-            <label class="form-label fs-6" >PASSWORD</label>
-            <input type="password" name="password" id="form3Example4" class="form-control form-control-lg"
-              placeholder="Enter your password" />
-            
-          </div>
 
-         
+            <!-- Email input -->
+            <div class="form-outline mb-4 shadow-sm">
+              <label class="form-label fs-6">USERNAME</label>
+              <input type="text" id="form3Example3" name="username" class="form-control form-control-lg"
+                placeholder="Enter your user name" />
 
-          <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="submit" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-           
-          </div>
+            </div>
 
-        </form>
+            <!-- Password input -->
+            <div class="form-outline mb-4 shadow-sm">
+              <label class="form-label fs-6">PASSWORD</label>
+              <input type="password" name="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter your password" />
+            </div>
+            <div class="text-danger">{{error}}</div>
+
+
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="submit" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+
+            </div>
+
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-    <!-- Optional JavaScript; choose one of the two! -->
+  </section>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'
-      integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj'
-      crossorigin='anonymous'
-    ></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'
+    integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj'
+    crossorigin='anonymous'></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

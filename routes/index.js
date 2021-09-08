@@ -32,7 +32,9 @@ router.get('/', function (req, res, next) {
     }
   ]
   let name = req.session.name;
-  res.render('index', { products, name });
+  let status = req.session.loggedIn
+  res.render('index', { products, name, status });
 });
+
 
 module.exports = router;
