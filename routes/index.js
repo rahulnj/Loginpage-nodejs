@@ -36,5 +36,8 @@ router.get('/', function (req, res, next) {
   res.render('index', { products, name, status });
 });
 
-
+router.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/')
+})
 module.exports = router;

@@ -21,10 +21,7 @@ router.post('/login', (req, res) => {
     res.render('login', { error: "Invalid username or password" })
   }
 })
-router.get('/logout', (req, res) => {
-  req.session.destroy();
-  res.redirect('/')
-})
+
 
 
 module.exports = router;
