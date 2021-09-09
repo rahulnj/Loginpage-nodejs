@@ -32,7 +32,6 @@ app.use(function (req, res, next) {
 });
 
 
-
 app.use(session({
   secret: 'key',
   resave: false,
@@ -59,5 +58,7 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.listen(3000);
+app.listen(3000, () => {
+  console.log('Server running');
+});
 module.exports = app;
